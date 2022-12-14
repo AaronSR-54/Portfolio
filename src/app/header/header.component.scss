@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+nav {
+  margin-top: 20px;
+
+  a {
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  a.active {
+    font-weight: 600;
+    text-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.1);
+  }
+
+  &.mobile{
+    a{
+      display: none;
+    }
+    a.active{
+      display: block;
+    }
+    .menu-button{
+      margin-top: 10px;
+      text-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 20vh;
+}
+
+@media (max-width: 550px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

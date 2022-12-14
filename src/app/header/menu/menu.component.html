@@ -1,0 +1,7 @@
+<div class="container">
+    <ng-container *ngFor="let section of sections">
+      <a [routerLink]="section.link" routerLinkActive="active" (click)="closeMenu()">{{ section.name }}
+      </a>
+    </ng-container>
+    <div class="menu--button"><i class="bi bi-chevron-up" (click)="closeMenu()"></i></div>
+</div>

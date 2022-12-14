@@ -1,0 +1,15 @@
+<div class="container" data-aos="zoom-in">
+    <section class="step-1" *ngIf="step === 0" data-aos="fade-up">
+        <app-presentation></app-presentation>
+        <div class="more">
+            <span (click)="addStep()">Saber más</span>
+        </div>
+    </section>
+    
+    <section class="step-2" *ngIf="step > 0" data-aos="fade-down">
+        <app-steps></app-steps>
+        <div class="more">
+            <span (click)="substractStep()">Volver</span>
+        </div>
+    </section> 
+</div>
