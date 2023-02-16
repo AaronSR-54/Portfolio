@@ -2,14 +2,14 @@
     <section class="step-1" *ngIf="step === 0" data-aos="fade-up">
         <app-presentation></app-presentation>
         <div class="more">
-            <span (click)="addStep()">Saber más</span>
+            <button (click)="addStep()">Saber más</button>
         </div>
     </section>
     
     <section class="step-2" *ngIf="step > 0" data-aos="fade-down">
         <app-steps></app-steps>
         <div class="more">
-            <span (click)="substractStep()">Volver</span>
+            <button (click)="substractStep()">Volver</button>
         </div>
     </section> 
 </div>

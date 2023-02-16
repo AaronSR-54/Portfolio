@@ -32,6 +32,15 @@ nav {
     .menu-button{
       margin-top: 10px;
       text-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.2);
+      transition: all 0.3s linear;
+    }
+    .menu-button:hover i{
+      text-shadow: none;
+      box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.1);
+      background-color: rgb(250, 250, 250);
+      padding: 3px;
+      border-radius: 3px;
+      transition: all 0.3s linear;
     }
   }
 }
@@ -39,10 +48,18 @@ nav {
 .menu {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100vw;
-  height: 20vh;
+  left: 50;
+  width: 60vw;
+  height: 0;
+  transition: height 0.1s ease-in;
+  overflow: hidden;
 }
+.menu-opened{
+  height: 20vh;
+  overflow: auto;
+  transition: height 0.1s ease-out;
+}
+
 
 @media (max-width: 550px) {
   nav {

@@ -20,7 +20,7 @@
     </div>
   </nav>
 
-  <div class="menu" *ngIf="menuOpened" data-aos="fade-down">
+  <div class="menu" [ngClass]="{'menu-opened':menuOpened}" data-aos="fade-down">
     <app-menu [sections]="sections" (menuOpened)="closeMenu()"></app-menu>
   </div>
 </div>

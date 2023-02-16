@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="container--section">
+        <div class="sub-section">
+            <h3>Profesionales</h3>
+            <button class="desplegable-btn" (click)="intercalateProSkills()"> 
+                <i class="bi bi-chevron-down" *ngIf="!proSkillsOpened" data-aos="zoom-in"></i> 
+                <i class="bi bi-chevron-up" *ngIf="proSkillsOpened" data-aos="zoom-in"></i> 
+            </button>
+        </div>
+        <div class="skills" [ngClass]="{'active': proSkillsOpened, 'inactive':!proSkillsOpened}">
+            <span class="skills--skill" *ngFor="let skill of proSkills">
+                {{skill}}
+            </span>
+        </div>
+    </div>
+    
+    <div class="container--section">
+        <div class="sub-section">
+        <h3>Técnicas</h3>
+        <button class="desplegable-btn" (click)="intercalateTechSkills()"> 
+            <i class="bi bi-chevron-down" *ngIf="!techSkillsOpened" data-aos="zoom-in"></i> 
+            <i class="bi bi-chevron-up" *ngIf="techSkillsOpened" data-aos="zoom-in"></i> 
+            </button>
+        </div>
+        <div class="skills" [ngClass]="{'active': techSkillsOpened, 'inactive':!techSkillsOpened}">
+            <span class="skills--skill" *ngFor="let skill of techSkills">
+                {{skill}}
+            </span>
+        </div>
+    </div>
+</div>

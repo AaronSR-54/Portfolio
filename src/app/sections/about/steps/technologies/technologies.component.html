@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="sub-section">
+        <h3>Principales</h3>
+        <div class="icons">
+            <img src="../../../../assets/technologies/Angular.png" alt="Angular" (mouseover)="openTech()" (mouseleave)="closeTech()">
+            <img src="../../../../assets/technologies/HTML.png" alt="HTML" (mouseover)="openTech()" (mouseleave)="closeTech()">
+            <img src="../../../../assets/technologies/CSS.png" alt="CSS">
+            <img src="../../../../assets/technologies/JavaScript.png" alt="JavaScript">
+        </div>
+        <div class="infoTech" [ngClass]="{'active':techOpened}">info</div>
+    </div>
+    <div class="sub-section">
+        <h3>Otras</h3>
+        <div class="icons">
+            <img src="../../../../assets/technologies/Angular.png" alt="Angular">
+            <img src="../../../../assets/technologies/HTML.png" alt="HTML">
+            <img src="../../../../assets/technologies/CSS.png" alt="CSS">
+            <img src="../../../../assets/technologies/JavaScript.png" alt="JavaScript">
+        </div>
+    </div>
+</div>
