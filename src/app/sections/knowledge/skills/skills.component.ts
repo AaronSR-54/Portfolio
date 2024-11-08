@@ -15,10 +15,10 @@ export class SkillsComponent implements OnInit {
     'Comunicación'
   ]
   techSkills: string[] = [
-    'Visual Studio Code', 
+    'Visual Studio Code',
+    'Figma', 
     'GitHub', 
-    'Adobe Photoshop', 
-    'Adobe Premiere'
+    'Adobe Photoshop',
   ]
 
   proSkillsOpened: boolean = false;

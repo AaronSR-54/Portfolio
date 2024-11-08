@@ -1,15 +1,16 @@
 <div class="container" data-aos="zoom-in">
     <section class="step-1" *ngIf="step === 0" data-aos="fade-up">
-        <app-presentation></app-presentation>
-        <div class="more">
-            <button (click)="addStep()">Saber más</button>
+        <div class="info">
+            <div class="info--left">
+                <img src="../../../assets/Perfil.png" alt="Perfil">
+            </div>
+            <div class="info--separator"></div>
+            <div class="info--right">
+                <h1>Hola! Soy Aaron.</h1>
+                <p>
+                    Soy desarrollador Front-End con una gran pasión por el diseño UX/UI y la maquetación web. Me encanta enfrentar nuevos desafíos y me esfuerzo constantemente por mejorar mis habilidades para ofrecer experiencias digitales atractivas y eficientes.
+                </p>
+            </div>
         </div>
     </section>
-    
-    <section class="step-2" *ngIf="step > 0" data-aos="fade-down">
-        <app-steps></app-steps>
-        <div class="more">
-            <button (click)="substractStep()">Volver</button>
-        </div>
-    </section> 
 </div>

@@ -4,12 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './sections/about/about.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
-import { SkillsComponent } from './sections/skills/skills.component';
+import { KnowledgeComponent } from './sections/knowledge/knowledge.component';
 
 const routes: Routes = [
   { path: 'home', component: AboutComponent },
   { path: 'experience', component: ExperienceComponent },
-  { path: 'skills', component: SkillsComponent },
+  { path: 'knowledge', component: KnowledgeComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];

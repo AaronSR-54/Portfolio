@@ -5,12 +5,12 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutComponent } from './sections/about/about.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
-import { SkillsComponent } from './sections/skills/skills.component';
+import { KnowledgeComponent } from './sections/knowledge/knowledge.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './header/menu/menu.component';
-import { AboutModule } from './sections/about/about.module';
+import { KnowledgeModule } from './sections/knowledge/knowledge.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,6 @@ import { AboutModule } from './sections/about/about.module';
     BannerComponent,
     AboutComponent,
     ExperienceComponent,
-    SkillsComponent,
     ProjectsComponent,
     HeaderComponent,
     MenuComponent
@@ -26,7 +25,7 @@ import { AboutModule } from './sections/about/about.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AboutModule
+    KnowledgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

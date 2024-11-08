@@ -17,22 +17,16 @@ export class HeaderComponent implements OnInit {
     },
     {
       id: 1,
-      name: 'Experiencia',
-      link: 'experience',
+      name: 'Conocimiento',
+      link: 'knowledge',
       active: false
     },
     {
       id: 2,
-      name: 'Habilidades',
-      link: 'skills',
+      name: 'Experiencia',
+      link: 'experience',
       active: false
     },
-    {
-      id: 3,
-      name: 'Proyectos',
-      link: 'projects',
-      active: false
-    }
   ]
 
   public menuOpened = false;
